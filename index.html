@@ -94,5 +94,24 @@
   <footer>
     <p>&copy; 2025 My Sample Website. All Rights Reserved.</p>
   </footer>
+      <script type='text/javascript'>
+        function initEmbeddedMessaging() {
+          try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+              '00DdL00000a7t9X',
+              'ESA_Web_Deployment',
+              'https://ddl00000a7t9xuaq-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657',
+              {
+                scrt2URL: 'https://ddl00000a7t9xuaq-dev-ed.develop.my.salesforce-scrt.com'
+              }
+            );
+          } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+          }
+        };
+      </script>
+      <script type='text/javascript' src='https://ddl00000a7t9xuaq-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
