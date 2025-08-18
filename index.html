@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,37 +12,44 @@
       background: #f4f4f9;
       color: #333;
     }
+
     header {
       background: #4CAF50;
       color: white;
       padding: 15px 20px;
       text-align: center;
     }
+
     nav {
       display: flex;
       justify-content: center;
       background: #333;
     }
+
     nav a {
       color: white;
       padding: 14px 20px;
       text-decoration: none;
     }
+
     nav a:hover {
       background: #575757;
     }
+
     .container {
       padding: 20px;
       max-width: 900px;
       margin: auto;
     }
+
     .card {
       background: white;
       padding: 20px;
       margin: 15px 0;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     footer {
       background: #333;
       color: white;
@@ -49,6 +57,7 @@
       padding: 15px;
       margin-top: 20px;
     }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
@@ -56,6 +65,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Welcome to My Sample Website New_v1</h1>
@@ -72,7 +82,8 @@
   <div class="container">
     <div class="card">
       <h2>About Us</h2>
-      <p>This is a sample section where you can describe your website, company, or personal profile. You can customize it as per your needs.</p>
+      <p>This is a sample section where you can describe your website, company, or personal profile. You can customize
+        it as per your needs.</p>
     </div>
 
     <div class="card">
@@ -90,28 +101,29 @@
       <p>Phone: +91 98765 43210</p>
     </div>
   </div>
-
   <footer>
     <p>&copy; 2025 My Sample Website. All Rights Reserved.</p>
   </footer>
-      <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-          try {
-            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+  <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-            embeddedservice_bootstrap.init(
-              '00DdL00000a7t9X',
-              'ESA_Web_Deployment',
-              'https://ddl00000a7t9xuaq-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657',
-              {
-                scrt2URL: 'https://ddl00000a7t9xuaq-dev-ed.develop.my.salesforce-scrt.com'
-              }
-            );
-          } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
+        embeddedservice_bootstrap.init(
+          '00Dd200000LrcxV',
+          'Github_Messaging_Setting',
+          'https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1755542308143',
+          {
+            scrt2URL: 'https://dd200000lrcxvear-dev-ed.develop.my.salesforce-scrt.com'
           }
-        };
-      </script>
-      <script type='text/javascript' src='https://ddl00000a7t9xuaq-dev-ed.develop.my.site.com/ESWESAWebDeployment1724800920657/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    };
+  </script>
+  <script type='text/javascript'
+    src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1755542308143/assets/js/bootstrap.min.js'
+    onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
