@@ -45,7 +45,7 @@
     Includes:
 
     Entry Points (Web, WhatsApp, Telegram, etc.).
-
+ 
     Variables like Customer Name, Email, Case Number.
 
 6. Define an Embedded Service Deployment
