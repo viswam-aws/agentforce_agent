@@ -68,7 +68,7 @@
 
 <body>
   <header>
-    <h1>Welcome to My Sample Website New_Agent_v2</h1>
+    <h1>Welcome to My Sample Website New_Agent_v3</h1>
     <p>A simple responsive HTML & CSS webpage</p>
   </header>
 
@@ -109,6 +109,11 @@
       try {
         embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
+        window.addEventListener("onEmbeddedMessagingReady", () => {
+          console.log("Received the onEmbeddedMessagingReady event...");
+          embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({ "customerEmail": "test" });
+        });
+
         embeddedservice_bootstrap.init(
           '00Dd200000LrcxV',
           'Github_Messaging_Setting',
@@ -126,4 +131,5 @@
     src='https://dd200000lrcxvear-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1755542308143/assets/js/bootstrap.min.js'
     onload='initEmbeddedMessaging()'></script>
 </body>
+
 </html>
